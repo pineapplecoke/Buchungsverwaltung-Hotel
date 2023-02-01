@@ -1,0 +1,41 @@
+﻿<Window x:Class="DFI_U2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DFI_U2"
+        mc:Ignorable="d"
+        Title="Gast Info" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="Listbox_Gast" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="506,38,123,134" SelectionChanged="Listbox_Gast_SelectionChanged"/>
+        <TextBox x:Name="TextBox_Vorname" HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="TextBox_Nachname" HorizontalAlignment="Center" Margin="0,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="TextBox_Telefone" HorizontalAlignment="Center" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="TextBox_Erwachsene" HorizontalAlignment="Center" Margin="0,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="TextBox_Kinder" HorizontalAlignment="Center" Margin="0,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="TextBox_Zimmer_Nr" HorizontalAlignment="Center" Margin="0,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <DatePicker x:Name="Data_Check_In" HorizontalAlignment="Center" Margin="0,172,0,0" VerticalAlignment="Top" Height="22" Width="120"/>
+        <DatePicker x:Name="Data_Check_Out" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Height="22" Width="120"/>
+        <Label Content="Buchungsart" HorizontalAlignment="Left" Margin="252,144,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vorname" HorizontalAlignment="Left" Margin="252,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nachname" HorizontalAlignment="Left" Margin="252,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefon" HorizontalAlignment="Left" Margin="252,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Herkunft" HorizontalAlignment="Left" Margin="252,116,0,0" VerticalAlignment="Top"/>
+        <Label Content="Check-In" HorizontalAlignment="Left" Margin="252,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Check-Out" HorizontalAlignment="Left" Margin="252,198,0,0" VerticalAlignment="Top"/>
+        <Label Content="Erwachsene" HorizontalAlignment="Left" Margin="252,224,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kinder" HorizontalAlignment="Left" Margin="252,252,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zimmer-Art" HorizontalAlignment="Left" Margin="252,278,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zimmer-Nr." HorizontalAlignment="Left" Margin="252,306,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_Import_file" Content="Import file (CSV/xlsx)" HorizontalAlignment="Left" Margin="31,32,0,0" VerticalAlignment="Top" Click="Import_file_Click" Height="70" Width="130"/>
+        <Button x:Name="Button_Export_file" Content="Export file (CSV/xlsx)" HorizontalAlignment="Left" Margin="31,126,0,0" VerticalAlignment="Top" Click="Export_file_Click" Height="70" Width="130"/>
+        <Button x:Name="Button_Neuer_Kunder" Content="Neuer Kunder" HorizontalAlignment="Left" Margin="31,220,0,0" VerticalAlignment="Top" Click="Neuer_kunder_Click" Height="70" Width="130"/>
+        <Button x:Name="Button_Aendern" Content="Änderung Speichern" HorizontalAlignment="Left" Margin="252,346,0,0" VerticalAlignment="Top" Click="Aenderung_Click" Height="22" Width="207"/>
+        <Button x:Name="Button_Loeschen" Content="Löschen" HorizontalAlignment="Left" Margin="506,309,0,0" VerticalAlignment="Top" Click="Loeschen_Click" Height="22" Width="171"/>
+        <Button x:Name="Button_Alle_Loeschen" Content="Alle löschen" HorizontalAlignment="Left" Margin="506,346,0,0" VerticalAlignment="Top" Click="Alle_loeschen_Click" Height="22" Width="171"/>
+        <ComboBox x:Name="ComboBox_Buchungsart" HorizontalAlignment="Center" Margin="0,146,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <ComboBox x:Name="ComboBox_Zimmer_Art" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <ComboBox x:Name="ComboBox_Herkunft" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+
+    </Grid>
+</Window>
